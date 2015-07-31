@@ -128,14 +128,8 @@ $(document).ready(function(){
                     });
                     $('#clear-shadow-btn').show();
                     if (p1.id == data['turn']){
-                        p1.getTurn();
-                    }
-                    break;
-                case 'change-turn':
-                    if (data['turn'] == p1.id){
-                        p1.getTurn();
-                    } else {
-                        p1.loseTurn();
+                        p1.turn = true;
+                        nodes.info.html('你先！');
                     }
                     break;
             }
