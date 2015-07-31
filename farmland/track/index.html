@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Brick Track</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="loading" class="panel" style="display:block;">
+		    <div>Loading......</div>
+		    <div>
+		        <ol>
+		            <li>请使用支持WebSocket和WebGL的浏览器。</li>
+		            <li>加载完成后可创建房间或进入已有房间。</li>
+		            <li>房主可开始游戏。</li>
+		            <li>进入游戏界面后，通过W，A，S，D或方向键控制车辆跑完全程。</li>
+		        </ol>
+		    </div>
+		</div>
+		<div id="hall" class="panel">
+		    <div class="left">
+		        <span class="title">房间列表</span>
+		        <span class="nickname">昵称</span>
+		        <ul id="roomList">
+		        </ul>
+		    </div>
+		    <div class="right">
+		        <input id="btnCreateRoom" type="button" value="新建房间" class="operate" />
+                <input id="btnEnterRoom" type="button" value="加入房间" class="operate" />
+		    </div>
+		    <div class="clear"></div>
+		</div>
+		
+		<div id="room" class="panel">
+            <div class="left">
+                <span id="roomTitle" class="title">成员列表</span>
+                <span class="nickname">昵称</span>
+                <ul id="roleList">
+                </ul>
+            </div>
+            <div class="right">
+                <ul id="terrainList">
+                    <li><label><input type="radio" name="terrains" value="bricktown" checked="" /><span>地图一</span></label></li>
+                    <li><label><input type="radio" name="terrains" value="smother" /><span>地图二</span></label></li>
+                </ul>
+                <input id="btnStart" type="button" value="开始游戏" class="operate" />
+                <input id="btnOutRoom" type="button" value="退出房间" class="operate" />
+            </div>
+            <div class="clear"></div>
+		</div>
+		
+		<div id="terrain">
+            <canvas id="glcanvas" width="1200" height="800">
+            </canvas>
+            <div id="warn"></div>
+            <div id="ranking"></div>
+		</div>
+		
+
+    <script src="http://123.57.13.28:8000/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="Oak3D_v_0_5.js"></script>
+    <script type="text/javascript" src="slgl.js"></script>
+    <script type="text/javascript" src="shader.js"></script>
+    <script type="text/javascript" src="hall.js"></script>
+    <script type="text/javascript" src="role.js"></script>
+    <script type="text/javascript" src="resources/models.js"></script>
+    <script type="text/javascript" src="resources/model-brickboy.js"></script>
+    <script type="text/javascript" src="resources/model-plant.js"></script>
+    <script type="text/javascript" src="resources/model-structure.js"></script>
+    <script type="text/javascript" src="resources/model-road.js"></script>
+    <script type="text/javascript" src="resources/textures.js"></script>
+    <script type="text/javascript" src="terrain/smother.js"></script>
+    <script type="text/javascript" src="terrain/bricktown.js"></script>
+    <script type="text/javascript" src="terrain.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+resources = window.resources||{};
+resources["textures"] = {
+"brick1":{
+    "file":"resources/images/brick1.jpg",
+    "texType":"REPEAT"
+},
+"brick3":{
+    "file":"resources/images/brick3.jpg",
+    "texType":"REPEAT"
+},
+"brick4":{
+    "file":"resources/images/brick4.jpg",
+    "texType":"REPEAT"
+},
+"brick5":{
+    "file":"resources/images/brick5.jpg",
+    "texType":"REPEAT"
+},
+"brick6":{
+    "file":"resources/images/brick6.jpg",
+    "texType":"REPEAT"
+},
+"brick5_1":{
+    "file":"resources/images/brick5_1.jpg",
+    "texType":"REPEAT"
+},
+"brick5_2":{
+    "file":"resources/images/brick5_2.jpg",
+    "texType":"REPEAT"
+},
+"brick5_3":{
+    "file":"resources/images/brick5_3.jpg",
+    "texType":"REPEAT"
+},
+"brick5_4":{
+    "file":"resources/images/brick5_4.jpg",
+    "texType":"REPEAT"
+},
+"sky1":{
+    "file":"resources/images/sky1.jpg",
+    "texType":"CLAMP_TO_EDGE"
+},
+"sky2":{
+    "file":"resources/images/sky2.jpg",
+    "texType":"CLAMP_TO_EDGE"
+},
+"auto1":{
+    "file":"resources/images/auto1.jpg",
+    "texType":"CLAMP_TO_EDGE"
+},
+"checker":{
+    "file":"resources/images/checker.jpg",
+    "texType":"REPEAT"
+},
+"billboard-html5-1":{
+    "file":"resources/images/billboard-html5-1.jpg",
+    "texType":"REPEAT"
+},
+"billboard-html5-2":{
+    "file":"resources/images/billboard-html5-2.jpg",
+    "texType":"REPEAT"
+},
+"tree1":{
+    "file":"resources/images/tree1.jpg",
+    "texType":"CLAMP_TO_EDGE"
+},
+"tree4":{
+    "file":"resources/images/tree4.jpg",
+    "texType":"CLAMP_TO_EDGE"
+},
+"grass1":{
+    "file":"resources/images/grass1.jpg",
+    "texType":"REPEAT"
+},
+"dirt1":{
+    "file":"resources/images/dirt1.jpg",
+    "texType":"REPEAT"
+},
+"hourse1":{
+    "file":"resources/images/house1.jpg",
+    "texType":"CLAMP_TO_EDGE"
+},
+"white":{
+    "file":"resources/images/white.png",
+    "texType":"CLAMP_TO_EDGE"
+}
+}
+
+

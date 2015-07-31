@@ -1,0 +1,20 @@
+body {margin:0px auto; background-color:#6f6e80}
+.panel {display:none; width:1000px; min-height:600px; height:auto; margin:60px auto auto auto; border:solid 3px #eee; border-radius: 20px; background-color:#dfe0e2; box-shadow:rgba(0,0,0,0.5) 20px 20px;}
+.clear {clear:both;}
+.panel .title{font-size:24px; font-weight:bold;}
+.panel .nickname{padding-left:50px; font-size:20px; font-weight:bold;}
+.panel .left{float:left; width:600px; margin:10px;}
+.panel .left ul {max-height: 450px; overflow-y: auto;}
+.panel .left li {list-style:none;}
+.panel .left li label{display:block; margin:15px auto 15px 0px; padding-left:10px; width:500px; height:50px; line-height:50px; border-radius:5px; background-color:#bad7e7; box-shadow:rgba(0,0,0,0.5) 5px 5px; font-size:20px; cursor: default;}
+.panel .right{float:right; width:330px; margin:10px; padding-top:50px;}
+.panel .right ul {margin:0px; padding:0px; max-height: 350px; overflow-y: auto;}
+.panel .right li {list-style:none;}
+.panel .right li label{display:block; margin:15px auto 15px 0px; padding-left:10px; width:200px; height:40px; line-height:40px; border-radius:5px; background-color:#bad7e7; box-shadow:rgba(0,0,0,0.5) 5px 5px; font-size:16px; cursor:default;}
+.panel .right input[type="button"].operate{width:200px; height:50px; margin-top:20px; background-color:#214656; border-color:#1b4b59; border-radius:25px; font-size:16px; font-weight:bold; color:#eee;}
+.panel .info{margin-top:25px;}
+.panel ol{margin-left:50px; text-align:left; line-height:30px;}
+#terrain{display:none; position:relative; width:1200px; height:800px; margin:10px auto; border:solid 1px #333; box-shadow:rgba(0,0,0,0.5) 15px 15px;}
+#warn{display:none; position:absolute; left:500px; top:200px; width:200px; height:200px; text-align:center; font-size:128px; cursor: default;}
+#ranking{position: absolute; left:450px; top:200px; width:300px; height:300px; font-size:24px; cursor:default;}
+#loading div{height:200px; text-align:center; line-height:200px; font-size:20px;}
