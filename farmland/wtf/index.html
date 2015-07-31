@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>击落战机</title>
+    <style type="text/css">
+    	.panel{width:100%;}
+    	
+    	#player-list {margin:50px;}
+    	#player-list .player{float:left; width:80px; height:80px; margin:10px; border:solid 1px #666; text-align:center; line-height:80px; cursor:pointer;}
+    
+        .operate {position:relative; height:260px;}
+        .operate .fighter-con {float:left; width:250px; height:250px; margin-top:10px; position:relative;}
+        .operate .fighter-a {width:250px; height:200px; background:url('images/fighter-a.png');}
+        .operate .fighter-b {width:250px; height:250px; background:url('images/fighter-b.png');}
+        .operate .rotate {position:absolute; z-index: 1; top:0; cursor:pointer;}
+        .operate .rotate-left {left:10px;}
+        .operate .rotate-right {right:10px;}
+        .operate .btn {width:100px; height:100px; margin:100px 0 0 50px; font-size:16px;}
+        .operate #info {position:absolute; width:200px; height:30px; left:500px; top:20px; cursor:default; font-size:18px; color:#f00; z-index:1;}
+        .operate .enemy-player {position:absolute; width:300px; height:50px; right:100px; top:20px; cursor:default; font-size:20px;}
+        .operate #enemy-nick {color:#f00; font-size:24px;}
+
+        .container {position:relative; width:1200px; height:550px;}
+        .field {position:absolute; width:500px; height:500px; border:solid 1px #000; top:0; z-index: 1;}
+        #my-field {left:0;}
+        #enemy-field {left:-600px;}
+        .field .brick {float:left; width:49px; height:49px; border-left:solid 1px #bbb; border-top:solid 1px #bbb; opacity:0.5;}
+        .field .brick-attack {background:#999;}
+        .field .brick-attacked {background:#00f;}
+        .field .brick-killed {background:#f00;}
+        .field#my-field .brick-hover {background-color:#333; opacity:0.4;}
+        .field .fighter{position:absolute; z-index:-1; width:250px; height:250px; background:url('images/fighter.png');}
+        .field .fighter.shadow{opacity:0.3;}
+        .field .fighter.fighter-a0{width:250px; height:200px; background-image:url('images/fighter-a.png');}
+        .field .fighter.fighter-a1{width:200px; height:250px; background-image:url('images/fighter-a1.png');}
+        .field .fighter.fighter-a2{width:250px; height:200px; background-image:url('images/fighter-a2.png');}
+        .field .fighter.fighter-a3{width:200px; height:250px; background-image:url('images/fighter-a3.png');}
+        .field .fighter.fighter-b0{background-image:url('images/fighter-b.png');}
+        .field .fighter.fighter-b1{background-image:url('images/fighter-b1.png');}
+        .field .fighter.fighter-b2{background-image:url('images/fighter-b2.png');}
+        .field .fighter.fighter-b3{background-image:url('images/fighter-b3.png');}
+    </style>
+</head>
+<body>
+    <div id="user-panel" style="display:none;" class="panel">
+        <div class="user-info">
+            <input type="text" id="user-nick" placeholder="请输入昵称" />
+            <input type="button" id="create-user" value="确定" />
+        </div>
+    </div>
+    <div id="hall-panel" style="display:none;" class="panel">
+        <div id="player-list">loading...</div>
+    </div>
+    <div id="game-panel" style="display:none;" class="panel">
+	    <div class="operate">
+	        <div class="fighter-con">
+	            <div class="fighter-icon fighter-a" fighter-type="a"></div>
+	            <div class="rotate rotate-left">左转</div>
+	            <div class="rotate rotate-right">右转</div>
+	        </div>
+            <div class="fighter-con">
+                <div class="rotate rotate-left">左转</div>
+                <div class="rotate rotate-right">右转</div>
+                <div class="fighter-icon fighter-b" fighter-type="b"></div>
+            </div>
+	        <input class="btn" type="button" value="就绪" id="ready-btn" />
+	        <input class="btn" type="button" value="清除" id="clear-btn" />
+            <input class="btn" type="button" value="清除标记" id="clear-shadow-btn" style="display:none;" />
+            <div id="info"></div>
+            <div class="enemy-player">同<span id="enemy-nick"></span>对战中...</div>
+	    </div>
+	    <div class="container">
+	        <div id="my-field" class="field"></div>
+	        <div id="enemy-field" class="field"></div>
+	    </div>
+    </div>
+
+</body>
+<script src="http://123.57.13.28:8001/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.ui.core.js"></script>
+<script type="text/javascript" src="jquery.ui.widget.js"></script>
+<script type="text/javascript" src="jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="jquery.ui.droppable.js"></script>
+<script type="text/javascript" src="hall.js"></script>
+<script type="text/javascript" src="field.js"></script>
+<script type="text/javascript" src="figther.js"></script>
+<script type="text/javascript" src="player.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</html>
