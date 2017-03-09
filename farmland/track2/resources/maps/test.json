@@ -1,0 +1,71 @@
+{
+    "size": [ 210, 0, 210 ],
+    "start": {
+        "position": [ 90, 0, -90 ],
+        "rotation": -90
+    },
+    "finish": {
+        "position": [ 90, 0, -70 ],
+        "rotation": 0
+    },
+    "bodies":{
+        "wall": [
+            {
+                "position": [ 100, 0, 0 ],
+                "rotation": 90,
+                "length": 200
+            } , {
+                "position": [ 80, 0, 0 ],
+                "rotation": 90,
+                "length": 160
+            } , {
+                "position": [ -100, 0, 0 ],
+                "rotation": 90,
+                "length": 200
+            } , {
+                "position": [ -80, 0, 0 ],
+                "rotation": 90,
+                "length": 160
+            } , {
+                "position": [ 0, 0, 100 ],
+                "rotation": 0,
+                "length": 200
+            } , {
+                "position": [ 0, 0, 80 ],
+                "rotation": 0,
+                "length": 160
+            } , {
+                "position": [ 0, 0, -100 ],
+                "rotation": 0,
+                "length": 200
+            } , {
+                "position": [ 10, 0, -80 ],
+                "rotation": 0,
+                "length": 180
+            }
+        ],
+
+        "tree": [
+            {
+                "position": [ 60, 0, 0 ],
+                "rotation": 30
+            } , {
+                "position": [ 10, 0, -60 ],
+                "rotation": 30
+            } , {
+                "position": [ -60, 0, 90 ],
+                "rotation": 0
+            }
+        ],
+
+        "box": [
+            {
+                "position": [ -92, 0, -60 ],
+                "rotation": 30
+            } , {
+                "position": [ -92, 1, -60 ],
+                "rotation": 30
+            }
+        ]
+    }
+}
